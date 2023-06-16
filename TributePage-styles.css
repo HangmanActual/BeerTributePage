@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    /*Includes borders and padding in dimension specs*/
+    font-family: Cambria;
+}
+
+body {
+    width: 100vw;
+    padding: 0;
+    background: #e9e0e0;
+    overflow-x: hidden;
+}
+
+/*====== BEGIN TEMPORARY CONSTRUCTION SITE*/
+#construction-site {
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+    #construction-site-background {
+        background: black;
+        opacity: 75%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 20;
+    }
+
+    #construction-sign {
+        text-align: center;
+        font-size: 5rem;
+        color: white;
+        positioN: relative;
+        top: 25%;
+        z-index: 21;
+    }
+/*====== END TEMPORARY CONSTRUCTION SITE*/
+
+#content-container {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 95vw;
+    margin: 2vh auto 2vh auto;
+    position: relative;
+}
+
+    #background {
+        border: none;
+        width: 100%;
+        height: 100%;
+        background: #c5bdbd;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #title-container {
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        z-index: 10;
+    }
+        #title-title, #title-subtitle {
+            border: none;
+            text-align: center;
+        }
+
+        #title-title {
+            border: none;
+            margin: 50px 0 0 0;
+            font-size: 3rem;
+        }
+
+        #title-subtitle {
+            margin: 20px 0 10px 0;
+        }
+
+    #image-container {
+        border: none;
+        /*border: 2px solid #b0699b*/
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
+        #image {
+            border: none;
+            /*border: 2px solid #5b5b9f;*/
+            display: block;
+            width: auto;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        #image-subtitle {
+            border: none;
+            margin: 10px 0 0 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+    #timeline-container {
+        border: none;
+        width: 95%;
+        max-width: 700px;
+        margin: 50px auto 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
+        #timeline-title {
+            border: none;
+            margin: 0 0 30px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        li {
+            margin: 25px auto;
+        }
+
+    #quote-container {
+        border: 2px solid #b0699b;
+        width: 95%;
+        margin: 5px auto;
+        position: relative;
+        z-index: 10;
+    }
+
+    #conclusion-container {
+        border: 2px solid #b0699b;
+        width: 95%;
+        margin: 5px auto;
+        position: relative;
+        z-index: 10;
+    }
